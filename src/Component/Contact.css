@@ -1,0 +1,71 @@
+@media only screen and (min-width:768px){
+  .contact{
+    display: flex;
+    overflow-y:hidden ;
+    justify-content: center;
+    align-items: center;
+    margin-top: 120px;
+    
+  }
+  .contact .address-page{
+      margin-left: 400px;
+     
+  }
+  .glassbox{
+    margin-left: 40px;
+  }
+  .contact-page{
+
+    display: flex;
+    font-weight: bolder;
+    color: black;
+    z-index: 200;
+    
+  
+  }
+ 
+}
+form {
+  background: rgba(49, 134, 190, 0.28);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.4px);
+  -webkit-backdrop-filter: blur(10.4px);
+  border: 1px solid rgba(49, 134, 190, 0.3);
+}
+input::content {
+  padding: 15px;
+  font-size: 18px;
+}
+
+input.form-control{
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+textarea.form-control{
+  padding-left: 45px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+span .ease {
+  opacity: 0.6;
+  position: absolute;
+  font-size: large;
+  border-radius: 15px;
+  background-color: rgba(176, 166, 171, 0.2);
+  font-weight: bolder;
+  left: 7px;
+  top: 7px;
+  width: 30px;
+  padding: 3px;
+  z-index: 200;
+}
+
+.icon{
+position: absolute; 
+z-index: 100;
+  width: 43px;
+  height: 100%;
+ 
+}

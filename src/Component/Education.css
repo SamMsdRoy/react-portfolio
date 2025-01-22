@@ -1,0 +1,39 @@
+@media only screen and (min-width:968px),screen and (max-height:400px) {
+  
+  .overflow-y{
+    color: black;
+    overflow:scroll;
+  }
+}
+
+
+@media only screen and (min-width: 768px) {
+  .education-page {
+    display: flex;
+    flex-direction: column;
+ 
+  }
+}
+.card-content-box {
+  justify-content: center;
+  align-items: center;
+}
+
+.card{
+  box-shadow:1px 1px 8px #000000;
+  
+ 
+}
+.container-fluid{
+  flex-wrap:wrap;
+}
+
+.card .lead{
+
+  font-size: 1rem;
+  font-weight: bold;
+}
+.text-muted{
+  font-size: 0.83rem;
+  font-weight: bold;
+}

@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+
+
+
+@media only screen and (min-width:768px){
+ 
+  .apara {
+    margin-left: 180px;
+    margin-top: 50px;
+  }
+
+  .apara p {
+    font-size: 32px;
+  }
+  .img-con {
+    max-width: 300px;
+  }
+  .dare{
+    margin-left: 40%;
+  }
+
+
+
+
+}
+.img-oop{
+  height: 200px;
+  width: 200px;
+}
+@media only screen and (min-width:1024px){
+  .img-oop{
+    height: 350px;
+    width: 350px;
+  }
+  .dare{
+    font-size:x-large;
+  }
+  .tooo{
+    font-size: large;
+    margin-left: 48px;
+    
+  }
+}
+
+
+.playfair {
+  font-family: 'Playfair Display';
+
+  font-weight: bolder;
+  font-style: normal;
+  color: blueviolet;
+}
+
+.josefin-sans {
+  font-family: 'Josefin Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+.home {
+  margin-top: 130px;
+}
+
