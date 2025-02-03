@@ -2,7 +2,6 @@ import React, { useContext } from 'react';
 import './Home.css'
 import { userContext } from '../App';
 import {Helmet} from 'react-helmet-async'
-// import {InstagramEmbed} from "react-social-media-embed"
 
 export default function Home() {
 const {initState}=useContext(userContext);
@@ -38,17 +37,18 @@ const {initState}=useContext(userContext);
           </div>
         </div>
       </div>
-      <div className="mt-5 w-100 text-center mb-2">
+      <div className="mt-1 w-100 text-center ">
         <ul className="list-group list-group-horizontal align-items-center justify-content-center g-3">
-          <li className="list-group-item mt-4 ">
-            <a href="https://www.instagram.com/samvicky650/" target='__blank' >
-              <span className="bi bi-instagram"></span>
+          <li className="list-group-item g">
+            <a href="https://www.instagram.com/samvicky650/" target='__blank' rel="noopener noreferrer" >
+              <span className="bi bi-instagram" style={{color:"#DE3163",fontSize:"25px"
+              }}></span>
             </a>
           </li>
           <div className="clear-fix"></div>
-          <li className="list-group-item mt-4">
-          <a href="http://www.github.com/samvicky650/" target="__blank" >
-              <span className="bi bi-github" style={{scrollMarginBlock:""}}></span>
+          <li className="list-group-item g">
+          <a href="http://www.github.com/samvicky650/" target="__blank" rel="noopener noreferrer" >
+              <span className="bi bi-github" style={{fontSize:"25px"}}></span>
             </a>
           </li>
         </ul>

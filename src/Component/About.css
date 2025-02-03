@@ -1,0 +1,68 @@
+@media only screen and (min-width:768px){
+    .about-container {
+    
+      display:grid;
+    
+
+      }    
+}
+.about-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 40px;
+    text-align: center;
+    overflow-y:auto;
+    max-height:100vh;
+    min-height:100vh;
+  }
+  
+  .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+  }
+  
+  .about-text {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .about-image {
+    flex: 1;
+    text-align: center;
+  }
+  
+  .profile-img {
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .skills-section {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .skills-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .skills-section li {
+    background: #f8f9fa;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+  
+  .social-links {
+    margin-top: 20px;
+  }
+  
+  .social-links a {
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  

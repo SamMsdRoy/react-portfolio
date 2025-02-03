@@ -32,7 +32,7 @@ export default function Contact() {
         <form
           action=""
           className="col-lg-4 col-md-5 col-sm-12 glassbox text-center"
-          style={{ height: '300px' }}
+          style={{ height: '300px' ,zIndex:'-100px' ,opacity:'100'}}
         >
           <div className="p-4">
             <div className="input-group  mb-3">

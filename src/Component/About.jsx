@@ -1,40 +1,55 @@
-import {Helmet} from 'react-helmet-async';
+import React, { useContext } from "react";
+import { userContext } from "../App";
+import { Helmet } from "react-helmet-async";
+import "./About.css";
+
 export default function About() {
-  const shadow = `
-  0 0 7px #fff,
-  0 0 10px #fff,
-  0 0 32px #0fa,
-  0 0 52px #0fa`;
-  return (<>
-   <Helmet>
-        <title>About!</title>
-        <meta name='description' content='Beginner friendly page for learning React Helmet.' />
-  </Helmet>
-    <div className="container-fluid d-block mt-3" style={{ height: '80dvh' }}>
-      <div className="img-container text-center" style={{ height: '90%' }}>
-        <img
-          src={
-            'https://images.pexels.com/photos/2681319/pexels-photo-2681319.jpeg?auto=compress&cs=tinysrgb&dpr=1'
-          }
-          alt=""
-          className="figure-img "
-          height="300px"
-          width="50%"
-          style={{ borderRadius: '10px' }}
-        />
+  const { initState } = useContext(userContext);
+
+  return (
+    <div className="about-container">
+      <Helmet>
+        <title>About Me</title>
+        <meta name="description" content="Learn more about my journey as a web designer." />
+      </Helmet>
+
+      <div className="about-content">
+        <div className="about-text">
+          <h1 className="text-primary">About Me</h1>
+          <p className="lead">
+            Hi, I'm <strong>{initState.name}</strong>, a passionate web designer with a keen eye for modern UI/UX design.
+            I love crafting visually appealing and user-friendly websites that enhance digital experiences.
+          </p>
+        </div>
+
+        <div className="about-image">
+          <img
+            src="../assets/IMG_20240621_212557copy-removebg-preview.png"
+            alt="Profile"
+            className="profile-img"
+          />
+        </div>
       </div>
-      <div
-        className="container-fluid"
-        style={{ height: '20%',width:"100%",backgroundColor:"black",marginTop:""}}
-      >
-       
-          
-          <figcaption className="figure-caption text-justify py-3 about-para">
-            Best Project you will ever on is yourself. Life isn't about find
-            yourself. Life is about creating yourself.
-          </figcaption>
-      
+
+      <div className="skills-section">
+        <h2>Skills</h2>
+        <ul>
+          <li>(React)</li>
+         
+          <li> (Python, MySQL)</li>
+          <li>Knowledge in (Excel)</li>
+        </ul>
+      </div>
+
+      <div className="social-links">
+        <h3>Connect with Me</h3>
+        <a href="https://www.instagram.com/samvicky650/" target="_blank" rel="noopener noreferrer">
+          <span className="bi bi-instagram" style={{ color: "#DE3163", fontSize: "25px" }}></span>
+        </a>
+        <a href="http://www.github.com/samvicky650/" target="_blank" rel="noopener noreferrer">
+          <span className="bi bi-github" style={{ fontSize: "25px" }}></span>
+        </a>
       </div>
     </div>
-</>  );
+  );
 }

@@ -1,17 +1,25 @@
 @media only screen and (min-width:968px),screen and (max-height:400px) {
+ 
+
+.doll{
+  overflow-y:auto;
+  display: flex;
+  flex-direction: column;
+   
+ 
+  max-height:100vh; 
+}
   
-  .overflow-y{
-    color: black;
-    overflow:scroll;
-  }
 }
 
 
 @media only screen and (min-width: 768px) {
-  .education-page {
+
+  .doll{
+    overflow-y:auto;
     display: flex;
     flex-direction: column;
- 
+    max-height:100vh; 
   }
 }
 .card-content-box {
@@ -20,13 +28,13 @@
 }
 
 .card{
-  box-shadow:1px 1px 8px #000000;
-  
+
+  min-height: 220px; /* Allows flexibility */
+  max-height: fit-content; 
+  box-shadow:1px 1px 5px #000000; 
  
 }
-.container-fluid{
-  flex-wrap:wrap;
-}
+
 
 .card .lead{
 
@@ -37,3 +45,5 @@
   font-size: 0.83rem;
   font-weight: bold;
 }
+
+

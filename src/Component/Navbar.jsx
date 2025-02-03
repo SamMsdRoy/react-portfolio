@@ -33,7 +33,7 @@ function Navbar() {
               </Link>
             </ul>
 
-            <div className="icon-person ms-2">
+            <div className="icon-person ms-2 nav-link text-center ">
               <span className="person-icon dropdown">
                 <span
                   className="bi bi-person-circle btn btn-danger"
